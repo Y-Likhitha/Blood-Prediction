@@ -111,9 +111,9 @@ grid.fit(x_train,y_train)
 grid.best_estimator_
 
 model=RandomForestClassifier(max_depth=20)
-  model.fit(x_train,y_train)
-  pred=model.predict(x_test)
-  print(accuracy_score(y_test,pred))
+model.fit(x_train,y_train)
+pred=model.predict(x_test)
+print(accuracy_score(y_test,pred))
 
 !streamlit run app.py --server.address=0.0.0.0 --server.port=8501 &
 
