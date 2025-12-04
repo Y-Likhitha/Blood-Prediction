@@ -14,7 +14,6 @@ import matplotlib.pyplot as plt
 
 
 # Commented out IPython magic to ensure Python compatibility.
-%%writefile /content/app.py
 
 df=pd.read_excel('/content/BLD-1.xlsx')
 df1=pd.read_csv('/content/BLD-2.csv')
