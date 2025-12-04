@@ -115,9 +115,4 @@ model.fit(x_train,y_train)
 pred=model.predict(x_test)
 print(accuracy_score(y_test,pred))
 
-!streamlit run app.py --server.address=0.0.0.0 --server.port=8501 &
 
-
-from pyngrok import ngrok
-public_url = ngrok.connect(8501, "http")
-public_url
