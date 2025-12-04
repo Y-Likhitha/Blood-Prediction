@@ -92,9 +92,9 @@ for i in models:
   print(i,'= ',accuracy_score(y_test,pred)) # svc will give more acc becoz data is non-linear
 
 model=RandomForestClassifier()
-  model.fit(x_train,y_train)
-  pred=model.predict(x_test)
-  print(accuracy_score(y_test,pred))
+model.fit(x_train,y_train)
+pred=model.predict(x_test)
+print(accuracy_score(y_test,pred))
 
 from sklearn.model_selection import cross_val_score
 score=cross_val_score(RandomForestClassifier(),x_train,y_train)
