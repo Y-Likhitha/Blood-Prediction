@@ -12,16 +12,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-!pip install streamlit pyngrok
-
-from pyngrok import ngrok
-
-ngrok.set_auth_token("36O4mY1hJpYLxsajD25Rf1D8eoy_V9VSJXMXvk7yyeGD2yBH")
-
-"""https://dashboard.ngrok.com/login"""
 
 # Commented out IPython magic to ensure Python compatibility.
-# %%writefile /content/app.py
+%%writefile /content/app.py
 
 df=pd.read_excel('/content/BLD-1.xlsx')
 df1=pd.read_csv('/content/BLD-2.csv')
